@@ -81,18 +81,15 @@ flex-direction: column;
 gap: 0.1rem;
 }
 .brand-name {
-font-size: 1.4rem;      /* 👈 más grande */
+font-size: 1.4rem;
 text-transform: uppercase;
-letter-spacing: 0.20em; /* opcional, puedes bajarlo si se ve muy separado */
+letter-spacing: 0.20em; 
 font-weight: 700;
 }
-
 .brand-tagline {
 font-size: 0.75rem;
 color: #cbd5f5;
 }
-
-/* NAVBAR */
 .navbar {
 display: flex;
 align-items: center;
@@ -219,9 +216,6 @@ transform: translateY(-1px) scale(1.01);
 box-shadow: 0 18px 46px rgba(0, 0, 0, 0.85);
 filter: brightness(1.02);
 }
-
-/* ======== TABLA DE PARTES (PC BUILDER) ======== */
-
 .parts-table-wrapper {
 overflow-x: auto;
 margin-top: 0.8rem;
@@ -244,36 +238,29 @@ padding: 0.65rem 0.75rem;
 text-align: left;
 border-bottom: 1px solid rgba(55, 65, 81, 0.8);
 }
-
 th {
 font-size: 0.75rem;
 text-transform: uppercase;
 letter-spacing: 0.15em;
 color: #9ca3af;
 }
-
 tbody tr:nth-child(even) {
 background: rgba(15, 23, 42, 0.85);
 }
-
 tbody tr:hover {
 background: rgba(30, 64, 175, 0.55);
 }
-
 .col-category {
 width: 140px;
 font-weight: 600;
 color: #e5e7eb;
 }
-
 .col-part {
 width: 45%;
 }
-
 .col-price {
 white-space: nowrap;
 }
-
 .part-select {
 width: 100%;
 padding: 0.4rem 0.5rem;
@@ -283,17 +270,14 @@ background: rgba(15, 23, 42, 0.95);
 color: #e5e7eb;
 font-size: 0.85rem;
 }
-
 .part-note {
 font-size: 0.74rem;
 color: #9ca3af;
 margin-top: 0.25rem;
 }
-
 .price {
 font-variant-numeric: tabular-nums;
 }
-
 .total-row {
 margin-top: 1.4rem;
 display: flex;
@@ -302,22 +286,18 @@ align-items: flex-start;
 flex-wrap: wrap;
 gap: 0.8rem;
 }
-
 .total-label {
 font-size: 0.85rem;
 color: #9ca3af;
 text-transform: uppercase;
 letter-spacing: 0.18em;
 }
-
 .total-amount {
 font-size: 1.2rem;
 font-weight: 700;
 color: #bbf7d0;
 font-variant-numeric: tabular-nums;
 }
-
-/* breakdown styling */
 .breakdown {
 margin-top: 0.4rem;
 font-size: 0.8rem;
@@ -334,8 +314,6 @@ opacity: 0.9;
 .breakdown-item span:last-child {
 font-variant-numeric: tabular-nums;
 }
-
-/* Footer */
 .site-footer {
 border-top: 1px solid rgba(148, 163, 184, 0.4);
 background: rgba(3, 7, 18, 0.95);
@@ -364,8 +342,6 @@ transition: opacity 0.2s ease;
 .footer-links a:hover {
 opacity: 1;
 }
-
-/* Responsive */
 @media (max-width: 900px) {
 .container {
 padding-inline: 1rem;
@@ -389,17 +365,13 @@ letter-spacing: 0.14em;
 <div class="wrapper">
 <header class="site-header">
 <div class="header-inner">
-<!-- LOGO + NOMBRE: link a Home -->
 <a href="file:///C:/Users/rosad/OneDrive/Manga%20Iguana/INTER/WEB%20DEV%20CLIENT%20%20front%20end/final%20project/prototipo%20final%201.html" class="brand">
 <div class="brand-logo">
 <img src="ratas.jpg" alt="LAB RAT logo">
 </div>
 <div class="brand-name">LAB RAT</div>
 </a>
-
-<!-- NAVBAR DENTRO DE .header-inner -->
 <nav class="navbar">
-<!-- Usa los mismos nombres de archivo que tus otras páginas -->
 <a href="file:///C:/Users/rosad/OneDrive/Manga%20Iguana/INTER/WEB%20DEV%20CLIENT%20%20front%20end/final%20project/prototipo%20final%201.html">Home</a>
 <a href="file:///C:/Users/rosad/OneDrive/Manga%20Iguana/INTER/WEB%20DEV%20CLIENT%20%20front%20end/final%20project/prototipo%20final%201-3.html">Build</a>
 <a href="file:///C:/Users/rosad/OneDrive/Manga%20Iguana/INTER/WEB%20DEV%20CLIENT%20%20front%20end/final%20project/final%20guia.html">Guia</a>
@@ -407,7 +379,6 @@ letter-spacing: 0.14em;
 </nav>
 </div>
 </header>
-
 <div class="container">
 <main>
 <section class="card" id="builder">
@@ -415,12 +386,10 @@ letter-spacing: 0.14em;
 Construye tu <span class="blue">PC</span><br />
 eligiendo entre <span class="cyan">varias opciones</span>
 </h1>
-
 <p class="hero-text">
 Selecciona una opción para cada categoría. Cada opción tiene un precio asociado
 y el total se calcula automáticamente.
 </p>
-
 <div class="parts-table-wrapper">
 <table>
 <thead>
@@ -431,7 +400,6 @@ y el total se calcula automáticamente.
 </tr>
 </thead>
 <tbody>
-<!-- CPU -->
 <tr data-row>
 <td class="col-category">CPU</td>
 <td class="col-part">
@@ -445,8 +413,6 @@ y el total se calcula automáticamente.
 </td>
 <td class="col-price price" data-price="0">$0.00</td>
 </tr>
-
-<!-- GPU -->
 <tr data-row>
 <td class="col-category">GPU</td>
 <td class="col-part">
@@ -460,8 +426,6 @@ y el total se calcula automáticamente.
 </td>
 <td class="col-price price" data-price="0">$0.00</td>
 </tr>
-
-<!-- RAM -->
 <tr data-row>
 <td class="col-category">RAM</td>
 <td class="col-part">
@@ -475,8 +439,6 @@ y el total se calcula automáticamente.
 </td>
 <td class="col-price price" data-price="0">$0.00</td>
 </tr>
-
-<!-- Almacenamiento -->
 <tr data-row>
 <td class="col-category">Almacenamiento</td>
 <td class="col-part">
@@ -490,8 +452,6 @@ y el total se calcula automáticamente.
 </td>
 <td class="col-price price" data-price="0">$0.00</td>
 </tr>
-
-<!-- Motherboard -->
 <tr data-row>
 <td class="col-category">Motherboard</td>
 <td class="col-part">
@@ -505,8 +465,6 @@ y el total se calcula automáticamente.
 </td>
 <td class="col-price price" data-price="0">$0.00</td>
 </tr>
-
-<!-- Case -->
 <tr data-row>
 <td class="col-category">Case</td>
 <td class="col-part">
@@ -520,8 +478,6 @@ y el total se calcula automáticamente.
 </td>
 <td class="col-price price" data-price="0">$0.00</td>
 </tr>
-
-<!-- Fuente -->
 <tr data-row>
 <td class="col-category">Fuente (PSU)</td>
 <td class="col-part">
@@ -535,19 +491,14 @@ y el total se calcula automáticamente.
 </td>
 <td class="col-price price" data-price="0">$0.00</td>
 </tr>
-
 </tbody>
 </table>
 </div>
-
 <div class="total-row" id="resumen">
 <div>
 <div class="total-label">Costo total estimado</div>
 <div id="totalAmount" class="total-amount">$0.00</div>
-
-<!-- breakdown of selected parts -->
 <div id="breakdown" class="breakdown">
-<!-- Se llena con JS -->
 </div>
 </div>
 <button type="button" class="btn-main" id="recalcBtn">
@@ -557,7 +508,6 @@ Reset
 </section>
 </main>
 </div>
-
 <footer class="site-footer">
 <div class="footer-inner">
 <span>© <span id="year"></span> LAB RAT</span>
@@ -566,32 +516,23 @@ Reset
 </div>
 </footer>
 </div>
-
 <script>
-// --- Calculadora de total + desglose ---
 function recalcTotal() {
 let total = 0;
 const rows = document.querySelectorAll("tr[data-row]");
 const breakdownItems = [];
-
 rows.forEach(function (row) {
 const categoryCell = row.querySelector(".col-category");
 const select = row.querySelector(".part-select");
 const priceCell = row.querySelector(".price");
 if (!select || !priceCell || !categoryCell) return;
-
 const option = select.options[select.selectedIndex];
 const price = parseFloat(option.getAttribute("data-price")) || 0;
 const partName = option.value === "" ? "" : option.textContent.trim();
 const categoryName = categoryCell.textContent.trim();
-
-// Actualiza celda de precio individual
 priceCell.setAttribute("data-price", price.toString());
 priceCell.textContent = "$" + price.toFixed(2);
-
 total += price;
-
-// Guardar en el desglose si hay algo seleccionado
 if (price > 0 && partName) {
 breakdownItems.push({
 category: categoryName,
@@ -600,11 +541,7 @@ price: price
 });
 }
 });
-
-// Actualiza total
 document.getElementById("totalAmount").textContent = "$" + total.toFixed(2);
-
-// Actualiza desglose
 const breakdownDiv = document.getElementById("breakdown");
 if (breakdownItems.length === 0) {
 breakdownDiv.innerHTML = "<em>No has seleccionado componentes aún.</em>";
@@ -617,43 +554,26 @@ breakdownDiv.innerHTML = breakdownItems.map(item => `
 `).join("");
 }
 }
-
-// 🔄 RESET: vuelve todos los selects al valor inicial y recalcula
 function resetBuilder() {
 const selects = document.querySelectorAll(".part-select");
 selects.forEach(select => {
-select.selectedIndex = 0; // primera opción (la de "Selecciona...")
+select.selectedIndex = 0;
 });
-
-// después de resetear, recalculamos para poner todo en $0.00 y limpiar desglose
 recalcTotal();
 }
-
-// Calcular al cargar
 recalcTotal();
-
-// Escuchar cambios en todos los selects
 document.querySelectorAll(".part-select").forEach(function (select) {
 select.addEventListener("change", recalcTotal);
 });
-
-// Botón de recalcular ahora hace RESET de las decisiones
 document.getElementById("recalcBtn").addEventListener("click", resetBuilder);
-
-// Año en el footer
 document.getElementById("year").textContent = new Date().getFullYear();
-
-// --- Subrayado activo en el navbar según la página ---
 const currentFile = decodeURIComponent(location.pathname.split("/").pop());
-
 document.querySelectorAll(".navbar a").forEach(link => {
 const href = link.getAttribute("href");
 if (!href) return;
-
 const linkFile = decodeURIComponent(
 href.split("/").pop().split("#")[0].split("?")[0]
 );
-
 if (linkFile === currentFile) {
 link.classList.add("active");
 } else {
