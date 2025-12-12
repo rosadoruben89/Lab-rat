@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>LAB RAT · PC para estudiar y jugar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Guía sencilla para elegir una PC equilibrada para estudiar y jugar sin gastar de más." />
+<style>
+*,*::before,*::after{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+body{
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+color:#f9fafb;
+background:radial-gradient(circle at top left,#0b4fbf 0,#021631 40%,#000 100%);
+min-height:100vh;
+line-height:1.5;
+}
+a{
+color:inherit;
+text-decoration:none;
+}
+.wrapper{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+.site-header{
+background:linear-gradient(180deg,rgba(3,16,46,.95),rgba(2,22,49,.95));
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(148,163,184,.35);
+}
+.header-inner{
+max-width:1150px;
+margin:auto;
+padding:.75rem 1.25rem;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:1rem;
+flex-wrap:wrap;
+}
+.brand{
+display:flex;
+gap:.75rem;
+align-items:center;
+}
+.brand-logo{
+width:52px;
+height:52px;
+border-radius:999px;
+overflow:hidden;
+border:2px solid rgba(255,255,255,.8);
+background:#020617;
+}
+.brand-logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+.brand-name {
+font-size: 1.4rem;
+text-transform: uppercase;
+letter-spacing: 0.20em;
+font-weight: 700;
+}
+.navbar {
+display: flex;
+align-items: center;
+gap: 1.5rem;
+font-size: 0.86rem;
+text-transform: uppercase;
+letter-spacing: 0.16em;
+margin-left: auto;
+margin-right: auto;
+}
+.navbar a{
+opacity:.7;
+position:relative;
+padding-bottom:.3rem;
+transition:opacity .2s ease;
+}
+.navbar a.active,
+.navbar a:hover{
+opacity:1;
+}
+.navbar a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+height:2px;
+background:linear-gradient(90deg,#fff,#38bdf8);
+transform:scaleX(0);
+transform-origin:left;
+transition:.25s;
+}
+.navbar a.active::after,
+.navbar a:hover::after{
+transform:scaleX(1);
+}
+.container{
+max-width:1150px;
+margin:auto;
+padding:2rem 1.25rem;
+flex:1;
+}
+.card{
+background:rgba(15,23,42,.9);
+border-radius:1rem;
+border:1px solid rgba(148,163,184,.55);
+padding:1.75rem;
+}
+.hero-title{
+font-size:1.5rem;
+text-transform:uppercase;
+letter-spacing:.18em;
+margin-bottom:1rem;
+}
+.article-intro{
+font-size:.95rem;
+color:#e5e7eb;
+max-width:45rem;
+margin-bottom:1.5rem;
+}
+.article-grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:1rem 1.5rem;
+}
+.article-block{
+background:rgba(15,23,42,.95);
+border-radius:.8rem;
+border:1px solid rgba(148,163,184,.4);
+padding:1rem 1.1rem;
+}
+.block-title{
+font-size:.95rem;
+font-weight:600;
+margin-bottom:.3rem;
+}
+.block-title span{
+display:block;
+font-size:.75rem;
+text-transform:uppercase;
+letter-spacing:.14em;
+color:#93c5fd;
+}
+.block-text{
+color:#e5e7eb;
+margin-bottom:.35rem;
+}
+.block-tip{
+font-size:.8rem;
+color:#a5b4fc;
+}
+.article-conclusion{
+margin-top:1.5rem;
+padding:1rem;
+border-radius:.8rem;
+border:1px solid rgba(148,163,184,.5);
+background:rgba(15,23,42,.95);
+font-size:.9rem;
+}
+.site-footer{
+border-top:1px solid rgba(148,163,184,.4);
+background:rgba(3,7,18,.95);
+padding:.75rem 1.25rem;
+font-size:.78rem;
+color:#9ca3af;
+}
+.footer-inner{
+max-width:1150px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+gap:1rem;
+flex-wrap:wrap;
+}
+@media (max-width:768px){
+.article-grid{
+grid-template-columns:minmax(0,1fr);
+}
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header class="site-header">
+<div class="header-inner">
+<a href="index.html" class="brand">
+
+<div class="brand-logo">
+<img src="ratas.jpg" alt="LAB RAT logo">
+</div>
+<div class="brand-name">LAB RAT</div>
+</a>
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="index2.html">Build</a>
+<a href="index5.html">Guia</a>
+<a href="index3.html">Contactanos</a>
+</nav>
+</div>
+</header>
+<main class="container">
+<section class="card">
+<h1 class="hero-title">¿Qué PC me conviene para estudiar y jugar?</h1>
+<p class="article-intro">
+Elegir una PC para estudiar y jugar no tiene que ser complicado ni caro.
+La clave está en balancear los componentes para que rindan bien en tareas académicas
+y también en juegos, sin gastar más de lo necesario.
+</p>
+<div class="article-grid">
+<article class="article-block">
+<h2 class="block-title">CPU <span>Rendimiento general</span></h2>
+<p class="block-text">
+Para estudiar (Word, PowerPoint, navegar, programación básica) no necesitas
+un procesador de gama alta.
+</p>
+<p class="block-tip">
+Recomendación: Ryzen 5 o Intel i5 para un buen balance.
+</p>
+</article>
+<article class="article-block">
+<h2 class="block-title">GPU <span>Juegos</span></h2>
+<p class="block-text">
+Si quieres jugar títulos populares como Fortnite, GTA V o Valorant,
+una GPU dedicada mejora mucho la experiencia.
+</p>
+<p class="block-tip">
+Recomendación: GTX 1660 o RTX 3060 para 1080p.
+</p>
+</article>
+<article class="article-block">
+<h2 class="block-title">RAM <span>Multitarea</span></h2>
+<p class="block-text">
+Permite abrir varios programas a la vez sin que la PC se ponga lenta.
+</p>
+<p class="block-tip">
+Recomendación: 16 GB como estándar actual.
+</p>
+</article>
+<article class="article-block">
+<h2 class="block-title">Almacenamiento <span>Velocidad</span></h2>
+<p class="block-text">
+Un SSD hace que todo cargue más rápido, desde Windows hasta juegos.
+</p>
+<p class="block-tip">
+Recomendación: SSD NVMe de 1 TB.
+</p>
+</article>
+</div>
+<div class="article-conclusion">
+<strong>Conclusión:</strong><br>
+No necesitas la PC más cara para estudiar y jugar. Un equipo equilibrado
+te dará buen rendimiento hoy y para varios años si eliges bien tus componentes.
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<span>© <span id="year"></span> LAB RAT</span>
+</div>
+</footer>
+</div>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
