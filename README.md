@@ -217,14 +217,14 @@ grid-template-columns:minmax(0,1fr);
 <div class="wrapper">
 <header class="site-header">
 <div class="header-inner">
-<a href="index1.html" class="brand">
+<a href="index.html" class="brand">
 <div class="brand-logo">
 <img src="ratas.jpg" alt="LAB RAT logo">
 </div>
 <div class="brand-name">LAB RAT</div>
 </a>
 <nav class="navbar">
-<a href="index1.html">Home</a>
+<a href="index.html">Home</a>
 <a href="index2.html">Build</a>
 <a href="index5.html">Guia</a>
 <a href="index3.html">Contactanos</a>
