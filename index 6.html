@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>LAB RAT · Errores comunes al armar tu primera PC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Errores comunes al armar tu primera PC y cómo evitarlos, explicado de forma sencilla para principiantes." />
+<style>
+*,*::before,*::after{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+body{
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+color:#f9fafb;
+background:radial-gradient(circle at top left,#0b4fbf 0,#021631 40%,#000 100%);
+min-height:100vh;
+line-height:1.5;
+}
+a{
+color:inherit;
+text-decoration:none;
+}
+.wrapper{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+.site-header{
+background:linear-gradient(180deg,rgba(3,16,46,.95),rgba(2,22,49,.95));
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(148,163,184,.35);
+}
+.header-inner{
+max-width:1150px;
+margin:auto;
+padding:.75rem 1.25rem;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:1rem;
+flex-wrap:wrap;
+}
+.brand{
+display:flex;
+gap:.75rem;
+align-items:center;
+}
+.brand-logo{
+width:52px;
+height:52px;
+border-radius:999px;
+overflow:hidden;
+border:2px solid rgba(255,255,255,.8);
+background:#020617;
+}
+.brand-logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+.brand-name {
+font-size: 1.4rem;
+text-transform: uppercase;
+letter-spacing: 0.20em;
+font-weight: 700;
+}
+.navbar {
+display: flex;
+align-items: center;
+gap: 1.5rem;
+font-size: 0.86rem;
+text-transform: uppercase;
+letter-spacing: 0.16em;
+margin-left: auto;
+margin-right: auto;
+}
+.navbar a{
+opacity:.7;
+position:relative;
+padding-bottom:.3rem;
+transition:opacity .2s ease;
+}
+.navbar a.active,
+.navbar a:hover{
+opacity:1;
+}
+.navbar a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+height:2px;
+background:linear-gradient(90deg,#fff,#38bdf8);
+transform:scaleX(0);
+transform-origin:left;
+transition:.25s;
+}
+.navbar a.active::after,
+.navbar a:hover::after{
+transform:scaleX(1);
+}
+.container{
+max-width:1150px;
+margin:auto;
+padding:2rem 1.25rem;
+flex:1;
+}
+.card{
+background:rgba(15,23,42,.9);
+border-radius:1rem;
+border:1px solid rgba(148,163,184,.55);
+padding:1.75rem;
+}
+.hero-title{
+font-size:1.5rem;
+text-transform:uppercase;
+letter-spacing:.18em;
+margin-bottom:1rem;
+}
+.article-intro{
+font-size:.95rem;
+color:#e5e7eb;
+max-width:45rem;
+margin-bottom:1.5rem;
+}
+.article-grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:1rem 1.5rem;
+}
+.article-block{
+background:rgba(15,23,42,.95);
+border-radius:.8rem;
+border:1px solid rgba(148,163,184,.4);
+padding:1rem 1.1rem;
+font-size:.9rem;
+}
+.block-title{
+font-size:.95rem;
+font-weight:600;
+margin-bottom:.3rem;
+}
+.block-title span{
+display:block;
+font-size:.75rem;
+text-transform:uppercase;
+letter-spacing:.14em;
+color:#fca5a5;
+}
+.block-text{
+color:#e5e7eb;
+margin-bottom:.35rem;
+}
+.block-tip{
+font-size:.8rem;
+color:#a5b4fc;
+}
+.article-conclusion{
+margin-top:1.5rem;
+padding:1rem;
+border-radius:.8rem;
+border:1px solid rgba(248,113,113,.7);
+background:rgba(15,23,42,.95);
+font-size:.9rem;
+color:#fee2e2;
+}
+.article-conclusion strong{
+color:#fecaca;
+}
+.mini-list{
+margin-top:.45rem;
+padding-left:1.1rem;
+font-size:.86rem;
+color:#e5e7eb;
+}
+.mini-list li{
+margin-bottom:.25rem;
+}
+.site-footer{
+border-top:1px solid rgba(148,163,184,.4);
+background:rgba(3,7,18,.95);
+padding:.75rem 1.25rem;
+font-size:.78rem;
+color:#9ca3af;
+}
+.footer-inner{
+max-width:1150px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+gap:1rem;
+flex-wrap:wrap;
+}
+.footer-links{
+display:flex;
+gap:1rem;
+flex-wrap:wrap;
+}
+@media (max-width:768px){
+.article-grid{
+grid-template-columns:minmax(0,1fr);
+}
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header class="site-header">
+<div class="header-inner">
+<a href="file:///C:/Users/rosad/OneDrive/Manga%20Iguana/INTER/WEB%20DEV%20CLIENT%20%20front%20end/final%20project/index%201.html" class="brand">
+<div class="brand-logo">
+<img src="ratas.jpg" alt="LAB RAT logo">
+</div>
+<div class="brand-name">LAB RAT</div>
+</a>
+<nav class="navbar">
+<a href="file:///C:/Users/rosad/OneDrive/Manga%20Iguana/INTER/WEB%20DEV%20CLIENT%20%20front%20end/final%20project/index%201.html">Home</a>
+<a href="file:///C:/Users/rosad/OneDrive/Manga%20Iguana/INTER/WEB%20DEV%20CLIENT%20%20front%20end/final%20project/index%202.html">Build</a>
+<a href="file:///C:/Users/rosad/OneDrive/Manga%20Iguana/INTER/WEB%20DEV%20CLIENT%20%20front%20end/final%20project/index%205.html">Guia</a>
+<a href="file:///C:/Users/rosad/OneDrive/Manga%20Iguana/INTER/WEB%20DEV%20CLIENT%20%20front%20end/final%20project/index%203.html">Contactanos</a>
+</nav>
+</div>
+</header>
+<main class="container">
+<section class="card">
+<h1 class="hero-title">Errores comunes al armar tu primera PC</h1>
+<p class="article-intro">
+Armar una PC por primera vez puede dar miedo, pero la mayoría de los problemas
+vienen de los mismos errores repetidos. Aquí verás los errores más comunes
+y cómo evitarlos, explicado en lenguaje sencillo.
+</p>
+<div class="article-grid">
+<article class="article-block">
+<h2 class="block-title">1. No conectar todos los cables de la fuente <span>PC enciende, pero no da imagen</span></h2>
+<p class="block-text">
+Muchas veces se conecta solo el cable grande de 24 pines a la motherboard,
+pero se olvida el cable de 8 pines (o 4+4) que alimenta el CPU.
+</p>
+<p class="block-tip">
+Solución: revisa que el conector ATX de 24 pines y el conector EPS de 8 pines
+estén bien puestos. Ambos son necesarios.
+</p>
+</article>
+<article class="article-block">
+<h2 class="block-title">2. Conectar el monitor a la salida equivocada <span>Sin señal de video</span></h2>
+<p class="block-text">
+Si tienes una tarjeta gráfica dedicada (GPU), el monitor debe ir conectado
+a la GPU, no a los puertos de video de la motherboard.
+</p>
+<p class="block-tip">
+Solución: conecta el cable HDMI/DisplayPort en la GPU (la que está más abajo,
+en posición horizontal) y no en los puertos superiores.
+</p>
+</article>
+<article class="article-block">
+<h2 class="block-title">3. No encajar bien la RAM <span>Pitidos o pantalla negra</span></h2>
+<p class="block-text">
+A veces la RAM parece estar puesta, pero no hizo clic en ambos lados
+y la PC no arranca correctamente.
+</p>
+<p class="block-tip">
+Solución: saca el módulo, alinea la muesca y presiona con firmeza hasta que las trabas
+se cierren solas. Verifica que no se vea “despareja”.
+</p>
+</article>
+<article class="article-block">
+<h2 class="block-title">4. Usar fuentes de poder genéricas <span>Riesgo para todos los componentes</span></h2>
+<p class="block-text">
+Una fuente de mala calidad puede fallar y dañar tu GPU, motherboard o disco.
+Es de las peores formas de “ahorrar dinero”.
+</p>
+<p class="block-tip">
+Solución: elige una fuente con certificación 80+ (White, Bronze, Gold) y de marca confiable.
+Mejor gastar un poco más que perder toda la PC.
+</p>
+</article>
+<article class="article-block">
+<h2 class="block-title">5. Mala ventilación y manejo de cables <span>Temperaturas altas</span></h2>
+<p class="block-text">
+Si los cables quedan hechos un nudo y no hay buen flujo de aire,
+la PC se calentará más de lo necesario.
+</p>
+<p class="block-tip">
+Solución: usa las bridas que trae el case, organiza los cables por detrás
+y asegúrate de que haya al menos un ventilador metiendo aire y otro sacándolo.
+</p>
+</article>
+<article class="article-block">
+<h2 class="block-title">6. No leer el manual de la motherboard <span>Cables frontales mal conectados</span></h2>
+<p class="block-text">
+Los pines del panel frontal (botón de encender, reset, LED, etc.)
+son pequeños y se ven confusos, pero el manual los explica con un diagrama.
+</p>
+<p class="block-tip">
+Solución: busca en el manual la sección “Front panel headers” o similar
+y sigue el dibujo con calma. Es normal equivocarse al principio.
+</p>
+</article>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<span>© <span id="year"></span> LAB RAT</span>
+</div>
+</footer>
+</div>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
